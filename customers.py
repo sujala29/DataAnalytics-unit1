@@ -2,6 +2,15 @@
 
 # FOLLOW PROJECT INSTRUCTIONS TO CREATE TABLE FOR CUSTOMER DATA
 
+create_customers = """CREATE TABLE customers(id SERIAL PRIMARY KEY,
+                                             first_name varchar(50),
+                                             last_name varchar(50),
+                                             email varchar(50),
+                                             gender varchar(50)
+                                              
+                                                                 );"""
+
+
 insert_customers = """
 INSERT INTO customers (first_name, last_name, email, gender) VALUES ('Traver', 'Jakubovitch', 'tjakubovitch0@aol.com', 'M');
 INSERT INTO customers (first_name, last_name, email, gender) VALUES ('Clair', 'Creaney', 'ccreaney1@dion.ne.jp', 'F');

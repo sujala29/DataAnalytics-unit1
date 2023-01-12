@@ -2,6 +2,16 @@
 
 # FOLLOW PROJECT INSTRUCTIONS TO CREATE TABLE FOR INVOICE DATA
 
+create_invoices =""" CREATE TABLE invoices(invoice_id SERIAL PRIMARY KEY,
+                                           stock_code VARCHAR(50),
+                                           product_category VARCHAR(50),
+                                           unit_price DECIMAL(5,2),
+                                           quantity INT,
+                                           customer_id INT); """
+
+
+
+
 
 insert_invoices = """
 INSERT INTO invoices (stock_code, product_category, unit_price, quantity, customer_id) VALUES ('HWLNKJW2', 'Outdoors', 9.54, 64, 12);
